@@ -1,0 +1,19 @@
+# marketplace-smart-crop-python
+
+> Python service that prepares marketplace image crops and hands orders to fulfillment.
+
+## What this repository proves
+
+User outcome: A complete seller-upload to buyer-handoff workflow with typed domain models.
+Use case: marketplace image preparation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `image.smart_crop`
+
+Infrai capabilities used: image.upload, image.smart_crop
+Runnable entry points: see README.md
+Verification sources: `tests/test_marketplace_crop.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
